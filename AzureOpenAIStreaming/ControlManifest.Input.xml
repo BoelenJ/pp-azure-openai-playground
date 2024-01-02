@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="AzureOpenAIPlayground" constructor="AzureOpenAIStreaming" version="0.1.0" display-name-key="AzureOpenAIStreaming" description-key="AzureOpenAIStreaming description" control-type="virtual" >
+   <external-service-usage enabled="true">
+      <domain>https://xxx.openai.azure.com</domain>
+    </external-service-usage>
+    <property name="BaseURL" display-name-key="BaseURL" description-key="Base URL of the Azure OpenAI instance." of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="APIKey" display-name-key="Api Key" description-key="The API Key." of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="DeploymentName" display-name-key="Deployment Name" description-key="The deployment name." of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Endpoint" display-name-key="Endpoint" description-key="The endpoint" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="SystemMessageChat" display-name-key="SystemMessageChat" description-key="SystemMessageChat" of-type="Multiple" usage="bound" required="true" />
+    <property name="Response" display-name-key="Response" description-key="The response" of-type="Multiple" usage="output" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+    </resources>
+  </control>
+</manifest>
