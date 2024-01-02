@@ -39,6 +39,7 @@ So please keep in mind that this PCF is currently __not recommended__ to use in 
 
 > Due to the security limitations, the PCF is currently __not recommended__ to use in an actual solution, hopefully this will change soon.
 
+https://github.com/BoelenJ/pp-azure-openai-playground/assets/117845677/ec5d70d2-eba8-417f-8326-42b186bebb25
 
 ## How to deploy the project
 
