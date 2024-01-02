@@ -11,6 +11,8 @@ The solution contains the following components:
 
 > The supported models depend on your Azure OpenAI deployment. For example, at the moment of writing, my deployment supports whisper, but it does not support DALL-E, so DALL-E will fail.
 
+<img width="1279" alt="image" src="https://github.com/BoelenJ/pp-azure-openai-playground/assets/117845677/402a88c5-6ec0-4ac4-b4a8-420ce0930550">
+
 ## The PCF Control
 
 Currently, Power Apps and custom connectors do not support streaming, where the response is sent in chunks once they become available instead of sending the full response after it is fully generated. As an experiment, this solution contains a PCF control that does allow for this streaming functionality (see ./src). The set-up of this component is as follows:
